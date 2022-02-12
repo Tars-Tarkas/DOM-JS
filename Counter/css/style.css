@@ -1,0 +1,89 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.wrap {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 380px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.counter__item {
+  margin-bottom: 20px;
+}
+
+input {
+  margin-bottom: 20px;
+  background: #ffffff;
+  border: 1px solid #cccc;
+  border-radius: 4px;
+  width: 320px;
+  height: 44px;
+  font-weight: normal;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+input:active, input:focus, input:hover {
+  border: 1px solid rgba(204, 204, 204, 0.932);
+  outline: none;
+}
+
+span {
+  margin: 0 10px 0 10px;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  outline: none;
+  border: 0;
+  font-weight: 500;
+  font-size: 24px;
+}
+button :focus {
+  outline: none;
+}
+button :active {
+  outline: none;
+}
+
+.counter__inner.open {
+  -webkit-transition: 0.2s visibility linear, 0.2s opacity linear;
+  transition: 0.2s visibility linear, 0.2s opacity linear;
+  visibility: visible;
+  opacity: 1;
+}
+
+.counter__inner {
+  visibility: hidden;
+  opacity: 0;
+}
